@@ -8,13 +8,3 @@ export const FoodTicketHolder = () => {
         `
     })
 }
-
-eventHub.addEventListener("click", eventObj =>{
-    if(event.target.id === "foodTicket") {
-
-        const foodEvent = new CustomEvent ("foodTicketPurchased")
-
-    eventHub.dispatchEvent(foodEvent)
-
-    }
-})
